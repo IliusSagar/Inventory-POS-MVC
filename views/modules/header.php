@@ -3,7 +3,7 @@
 	<!--==========================
 	=            logo            =
 	===========================-->
-	<a href="" class="logo">
+	<a href="home" class="logo">
 		
 		<!-- mini logo -->
 		<span class="logo-mini">
