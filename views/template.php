@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +10,8 @@
   <title>Inventory System</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <link rel="icon" href="views/img/template/icono-negro.png">
 
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="views/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -37,11 +43,14 @@
 </head>
 
 
-<body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
-<!-- Site wrapper -->
-<div class="wrapper">
+<body class="hold-transition skin-blue sidebar-collapse sidebar-mini login-page">
+
 
   <?php 
+
+if(isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == "ok"){
+
+echo '<div class="wrapper">';
 
     include "modules/header.php";
 
@@ -61,20 +70,39 @@
 
         include "modules/".$_GET["route"].".php";
 
-      }
+      }else{
+           
+           include "modules/404.php";
+        
+        }
 
     }
+
+    else{
+        
+        include "modules/home.php";
+      
+      }
 
     
 
     include "modules/footer.php";
 
+    echo '</div>';
+
+    }else{
+       /*=============================================
+      =            login          =
+      =============================================*/ 
+
+      include "modules/login.php";
+    }
+
   ?>
 
   
 
-</div>
-<!-- ./wrapper -->
+
 
 <script src="views/js/template.js"></script>
 </body>

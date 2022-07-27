@@ -6,6 +6,6 @@ class ControllerTemplate{
 		
 		include "views/template.php";
 
-	}
+	} 
 
 }
