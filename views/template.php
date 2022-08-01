@@ -19,6 +19,12 @@
   <link rel="stylesheet" href="views/bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="views/bower_components/Ionicons/css/ionicons.min.css">
+
+  <!-- DataTables -->
+  <link rel="stylesheet" href="views/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="views/bower_components/datatables.net-bs/css/responsive.bootstrap.min.css">
+
+
   <!-- Theme style -->
   <link rel="stylesheet" href="views/dist/css/AdminLTE.css">
 
@@ -33,12 +39,19 @@
 <!-- Bootstrap 3.3.7 -->
 <script src="views/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+ <!-- DataTables -->
+ <script src="views/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+ <script src="views/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+ <script src="views/bower_components/datatables.net-bs/js/dataTables.responsive.min.js"></script>
+ <script src="views/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script>
+
 <!-- FastClick -->
 <script src="views/bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="views/dist/js/adminlte.min.js"></script>
 
-
+<!-- sweet alert -->
+<script src="views/plugins/sweetalert2/sweetalert2.all.js"></script>
 
 </head>
 
@@ -105,5 +118,6 @@ echo '<div class="wrapper">';
 
 
 <script src="views/js/template.js"></script>
+<script type="text/javascript" src="views/js/users.js"></script>
 </body>
 </html>
