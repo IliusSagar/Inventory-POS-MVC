@@ -119,5 +119,6 @@ echo '<div class="wrapper">';
 
 <script src="views/js/template.js"></script>
 <script type="text/javascript" src="views/js/users.js"></script>
+<script src="views/js/categories.js"></script>
 </body>
 </html>
